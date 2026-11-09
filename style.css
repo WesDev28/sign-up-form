@@ -6,19 +6,41 @@
     font-display: swap;
 }
 
+*, *::before, *::after {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
 
 body {
     background:blue;
     font-family:"Longhaul";
     color:white;
+    display:flex;
+ 
 }
+
+.imgBox {
+    height:100%;
+
+}
+
+.left-fit {
+    max-height:100vh;
+}
+
+
+
+.form{
+    width:90vw;
+}
+
 
 h1 {
-    color:white;
-    text-align:center;
-    font-size:5rem;
+    font-size:10rem;
+    margin-right:50px;
 }
-
 
 .formRow {
     display:flex;
@@ -28,8 +50,9 @@ p {
     display:flex;
     flex-direction:column;
     margin:25px 0 0 50px;
+    font-size:10rem;
 }
 
-label {
-    font-size:0.75rem;
+input {
+    font-size:10rem;
 }
