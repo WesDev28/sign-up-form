@@ -14,7 +14,7 @@
 
 
 body {
-    background:blue;
+    background:black;
     font-family:"Longhaul";
     color:white;
     display:flex;
@@ -30,29 +30,58 @@ body {
     max-height:100vh;
 }
 
+.pageBox {
+    background:#021358;
+    width:100%;
+}
+
+.textRow{
+    background:grey;
+}
+
+blockquote {
+    width:75%;
+    font-size:3rem;
+}
+
 
 
 .form{
-    width:90vw;
+    width:100vw;
 }
 
 
 h1 {
-    font-size:10rem;
-    margin-right:50px;
+    font-size:3rem;
+    margin:25px 0 0 50px;
 }
 
 .formRow {
     display:flex;
 }
 
-p {
+.inputField {
     display:flex;
     flex-direction:column;
     margin:25px 0 0 50px;
-    font-size:10rem;
+    font-size:3rem;
 }
 
 input {
-    font-size:10rem;
+    font-size:3rem;
+}
+
+.submitRow {
+    font-size:3rem;
+    background: #820000;
+    width:100%;
+    height:25vh;
+}
+
+button {
+    font-size: 3rem;
+}
+
+.submitRow > *{
+    margin:25px 0 0 50px;
 }
