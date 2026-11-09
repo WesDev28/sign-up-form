@@ -6,6 +6,13 @@
     font-display: swap;
 }
 
+:root{
+    --screen-width: 100vw;
+    --img-ratio:calc(9/16);
+    --image-width: calc(100vh * var(--img-ratio));
+
+}
+
 *, *::before, *::after {
     box-sizing:border-box;
     margin:0;
@@ -17,13 +24,15 @@ body {
     background:black;
     font-family:"Longhaul";
     color:white;
+    max-width:var(--screen-width);
     display:flex;
+    height:100vh
  
 }
 
 .imgBox {
     height:100%;
-
+    width: var(--image-width);
 }
 
 .left-fit {
@@ -31,23 +40,27 @@ body {
 }
 
 .pageBox {
-    background:#021358;
-    width:100%;
+    background:#0a0348;
+    width:calc(100vw - var(--image-width));
+    display:flex;
+    flex-direction:column;
 }
 
 .textRow{
     background:grey;
+    width:100%;
+    flex:1;
 }
 
 blockquote {
-    width:75%;
+    width:500px;
     font-size:3rem;
+
 }
 
-
-
-.form{
+form{
     width:100vw;
+    flex:1;
 }
 
 
@@ -73,9 +86,9 @@ input {
 
 .submitRow {
     font-size:3rem;
-    background: #820000;
+    background: #776363;
     width:100%;
-    height:25vh;
+    flex:1;
 }
 
 button {
