@@ -23,10 +23,11 @@
 body {
     background:black;
     font-family:"Longhaul";
+    /* font-family:  "Courier New", monospace; */
     color:white;
     max-width:var(--screen-width);
     display:flex;
-    height:100vh
+    max-height:100vh
  
 }
 
@@ -50,16 +51,20 @@ body {
     background:grey;
     width:100%;
     flex:1;
+    display:flex;
+    align-items:center;
+    
 }
 
 blockquote {
-    width:500px;
-    font-size:3rem;
-
+    color:rgb(0, 31, 97);
+    font-size:2.5rem;
+    width:75%;
+    margin:50px;
 }
 
 form{
-    width:100vw;
+    width:100%;
     flex:1;
 }
 
@@ -76,12 +81,12 @@ h1 {
 .inputField {
     display:flex;
     flex-direction:column;
-    margin:25px 0 0 50px;
-    font-size:3rem;
+    margin:25px 0 25px 50px;
+    font-size:1.5rem;
 }
 
 input {
-    font-size:3rem;
+    font-size:2rem;
 }
 
 .submitRow {
@@ -92,7 +97,14 @@ input {
 }
 
 button {
-    font-size: 3rem;
+    font-size: 2rem;
+    font-weight:900;
+    background: #596D48;
+    color:white;
+    margin:0;
+    padding: 25px 10px;
+    border-radius: 0.5rem;
+    border:none;
 }
 
 .submitRow > *{
