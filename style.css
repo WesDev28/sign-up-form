@@ -22,7 +22,8 @@
 
 body {
     background:black;
-    font-family:"Longhaul";
+    font-family:Roboto;
+    font-weight:bold;
     /* font-family:  "Courier New", monospace; */
     color:white;
     max-width:var(--screen-width);
@@ -61,11 +62,11 @@ body {
 }
 
 .odin-text {
+    font-family:"Longhaul";
     font-size:7rem;
 }
 
 .pageBox {
-    background:#0a0348;
     /* width:calc(100vw - var(--image-width)); */
     flex:3; 
     display:flex;
