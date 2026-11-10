@@ -27,22 +27,44 @@ body {
     color:white;
     max-width:var(--screen-width);
     display:flex;
-    max-height:100vh
+    min-height:100vh;
  
 }
 
-.imgBox {
+.imgContainer {
     height:100%;
-    width: var(--image-width);
+    min-width: var(--image-width);
+    position:sticky;
+    top:0;
+    flex:1 0 0%;
 }
 
-.left-fit {
+.bg-image {
     max-height:100vh;
+    width:100%;
+    position:absolute;
+}
+
+.odin-banner {
+    background:hsl(0 0% 0% / 0.6);
+    position:absolute;
+    min-width:100%;
+    height:5rem;
+
+}
+
+
+.odin-logo {
+    height:100%;
+    width:auto;
+    object-fit:contain;
+    /* left:50px; */
 }
 
 .pageBox {
     background:#0a0348;
-    width:calc(100vw - var(--image-width));
+    /* width:calc(100vw - var(--image-width)); */
+    flex:3; 
     display:flex;
     flex-direction:column;
 }
