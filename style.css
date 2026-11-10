@@ -74,7 +74,7 @@ body {
 }
 
 .textRow{
-    background:grey;
+    background:#f8f9fb;
     width:100%;
     flex:1;
     display:flex;
@@ -94,6 +94,10 @@ blockquote p + p {
 }
 
 form{
+    background:#ffffff;
+    color:black;
+    position:relative;
+    box-shadow: 0 25px 0 hsl(0% 0% 0% / 1);
     width:100%;
     flex:1;
 }
@@ -121,7 +125,8 @@ input {
 
 .submitRow {
     font-size:3rem;
-    background: #776363;
+    background: #f8f9fb;
+    color:black;
     width:100%;
     flex:1;
 }
@@ -139,4 +144,12 @@ button {
 
 .submitRow > *{
     margin:25px 0 0 50px;
+}
+
+.submitRow p {
+    font-size:2rem;
+}
+
+.submitRow a {
+    color:#596D48;
 }
