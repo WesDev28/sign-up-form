@@ -82,10 +82,14 @@ body {
 }
 
 blockquote {
-    color:rgb(0, 31, 97);
+    color:rgb(0, 0, 0);
     font-size:2.5rem;
     width:75%;
     margin:50px;
+}
+
+blockquote p + p {
+    margin-top:2rem;
 }
 
 form{
