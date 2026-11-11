@@ -105,8 +105,10 @@ form{
 
 
 h1 {
+    color:#3b3a3a;
+    font-weight:500;
     font-size:3rem;
-    margin:25px 0 0 50px;
+    margin:25px 0 0 3rem;
 }
 
 .formRow {
@@ -116,7 +118,7 @@ h1 {
 .inputField {
     display:flex;
     flex-direction:column;
-    margin:25px 0 25px 50px;
+    margin:25px 0 25px 3rem;
     font-size:1.5rem;
 }
 
@@ -139,23 +141,23 @@ input {
     flex:1;
 }
 
-button {
+.submitRow .submitBtn {
     font-size: 2rem;
-    font-weight:900;
+    font-weight:700;
     background: #596D48;
     color:white;
-    margin:0;
-    padding: 25px 10px;
-    border-radius: 0.5rem;
+    margin: 3rem 0 0 3rem;
+    padding: 1.25rem 5rem;
     border:none;
-}
-
-.submitRow > *{
-    margin:25px 0 0 50px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width:20%;
 }
 
 .submitRow p {
+    font-weight:500;
     font-size:2rem;
+    margin: 3rem 0 0 3rem;
 }
 
 .submitRow a {
