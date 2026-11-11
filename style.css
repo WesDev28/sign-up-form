@@ -10,6 +10,7 @@
     --screen-width: 100vw;
     --img-ratio:calc(2/3);
     --image-width: calc(100vh * var(--img-ratio));
+    --form-background:#6eb4f9;
 
 }
 
@@ -24,7 +25,6 @@ body {
     background:black;
     font-family:Roboto;
     font-weight:bold;
-    /* font-family:  "Courier New", monospace; */
     color:white;
     max-width:var(--screen-width);
     display:flex;
@@ -67,8 +67,6 @@ body {
 }
 
 .pageBox {
-    /* width:calc(100vw - var(--image-width)); */
-    flex:3; 
     display:flex;
     flex-direction:column;
 }
@@ -98,11 +96,11 @@ blockquote p + p {
 }
 
 form{
-    background:#6eb4f9;
+    font-family:inherit;
+    background:var(--form-background);
     color:black;
     position:relative;
-    /* border: 3px solid lightgray;  */
-    box-shadow: 0 8px 10px gray;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     width:100%;
     flex:1;
 }
@@ -110,9 +108,9 @@ form{
 
 h1 {
     width:60%;
-    color:#3b3a3a;
+    color:black;
     font-weight:500;
-    font-size:3rem;
+    font-size:2.5rem;
     margin:25px 0 0 3rem;
 }
 
@@ -127,19 +125,34 @@ h1 {
     display:flex;
     flex-direction:column;
     margin:25px 0 25px 3rem;
-    font-size:1.5rem;
 }
 
 label {
     letter-spacing:0.15rem;
-    font-size:1.25rem;
+    font-size:1rem;
     font-weight:700;
-    color:#4e4c4c;
+    color:black;
+
 }
 
 input {
+    font-family:inherit;
     width:100%;
-    font-size:3rem;
+    font-size:2rem;
+    background:var(--form-background);
+    color:#1f2937;
+    border:2px solid #e5e7eb;
+    border-radius:8px;
+    outline:none;
+}
+
+input:focus {
+    border-color: #3b64e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+input:user-invalid {
+    border-color: #c0392b;
 }
 
 .submitRow {
@@ -155,13 +168,13 @@ input {
     font-family:inherit;
     font-size: 2rem;
     font-weight:700;
-    background: #596D48;
+    background: #2c6bb3;
     color:white;
     margin: 3rem 0 0 3rem;
     padding: 1.25rem 5rem;
     border:none;
     border-radius: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.5);
 }
 
 .submitRow p {
@@ -171,5 +184,5 @@ input {
 }
 
 .submitRow a {
-    color:#596D48;
+    color:#2c6bb3;
 }
