@@ -151,6 +151,8 @@ input {
 }
 
 .submitRow .submitBtn {
+    width:auto;
+    font-family:inherit;
     font-size: 2rem;
     font-weight:700;
     background: #596D48;
@@ -160,7 +162,6 @@ input {
     border:none;
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    width:20%;
 }
 
 .submitRow p {
