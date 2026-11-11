@@ -85,8 +85,12 @@ body {
 blockquote {
     color:rgb(0, 0, 0);
     font-size:2.5rem;
-    width:75%;
+    width:60%;
     margin:50px;
+}
+
+blockquote p {
+    text-wrap:balanced;
 }
 
 blockquote p + p {
@@ -105,6 +109,7 @@ form{
 
 
 h1 {
+    width:60%;
     color:#3b3a3a;
     font-weight:500;
     font-size:3rem;
@@ -112,10 +117,13 @@ h1 {
 }
 
 .formRow {
+    width:60%;
     display:flex;
 }
 
 .inputField {
+    flex:1;
+    min-width:0;
     display:flex;
     flex-direction:column;
     margin:25px 0 25px 3rem;
@@ -130,6 +138,7 @@ label {
 }
 
 input {
+    width:100%;
     font-size:3rem;
 }
 
