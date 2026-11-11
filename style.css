@@ -94,10 +94,11 @@ blockquote p + p {
 }
 
 form{
-    background:#ffffff;
+    background:#6eb4f9;
     color:black;
     position:relative;
-    box-shadow: 0 25px 0 hsl(0% 0% 0% / 1);
+    /* border: 3px solid lightgray;  */
+    box-shadow: 0 8px 10px gray;
     width:100%;
     flex:1;
 }
