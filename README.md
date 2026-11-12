@@ -17,6 +17,7 @@ For [The Odin Project](https://www.theodinproject.com)
 
  ## Skills Practiced
  - Building an HTML5 form with `label`, input types, and required validation
+ - Using CSS custom properties (variables) to size the background image from an aspect ratio
  - Using CSS positioning (`relative` and `absolute`) to overlay the banner on the background image
  - Self-hosting a custom font with `@font-face` (WOFF2) 
  - Loading Roboto from the Google Fonts stylesheet
