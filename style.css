@@ -11,6 +11,7 @@
     --img-ratio:calc(2/3);
     --image-width: calc(100vh * var(--img-ratio));
     --form-background:#6eb4f9;
+    --link-background:#2c6bb3;
 }
 
 *, *::before, *::after {
@@ -64,6 +65,23 @@ body {
     font-size:7rem;
 }
 
+.img-credit{
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size:1.25rem;
+    font-weight:500;
+    color:white;
+}
+
+.img-credit a{
+    color:white;
+}
+
+
+
 .pageBox {
     display:flex;
     flex-direction:column;
@@ -75,7 +93,6 @@ body {
     flex:1;
     display:flex;
     align-items:center;
-    
 }
 
 blockquote {
@@ -169,7 +186,7 @@ input:user-invalid {
     font-family:inherit;
     font-size: 2rem;
     font-weight:700;
-    background: #2c6bb3;
+    background: var(--link-background);
     color:white;
     margin: 3rem 0 0 3rem;
     padding: 1.25rem 5rem;
@@ -185,5 +202,5 @@ input:user-invalid {
 }
 
 .submitRow a {
-    color:#2c6bb3;
+    color:var(--link-background);
 }
