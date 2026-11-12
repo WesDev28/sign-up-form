@@ -11,7 +11,6 @@
     --img-ratio:calc(2/3);
     --image-width: calc(100vh * var(--img-ratio));
     --form-background:#6eb4f9;
-
 }
 
 *, *::before, *::after {
@@ -29,7 +28,6 @@ body {
     max-width:var(--screen-width);
     display:flex;
     min-height:100vh;
- 
 }
 
 .imgContainer {
@@ -105,7 +103,6 @@ form{
     flex:1;
 }
 
-
 h1 {
     width:60%;
     color:black;
@@ -132,13 +129,13 @@ label {
     font-size:1rem;
     font-weight:700;
     color:black;
-
 }
 
 input {
     font-family:inherit;
     width:100%;
     font-size:2rem;
+    padding:0.25rem;
     background:var(--form-background);
     color:#1f2937;
     border:2px solid #e5e7eb;
@@ -149,6 +146,10 @@ input {
 input:focus {
     border-color: #3b64e0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+input:user-valid {
+    border-color:rgb(0, 255, 0);
 }
 
 input:user-invalid {
