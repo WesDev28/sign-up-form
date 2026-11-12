@@ -55,19 +55,24 @@
 
                 <p class="inputField">
                 <label for="phone">PHONE NUMBER</label>
-                <input type="tel" id="phone" name="phone" required/>
+                <input type="tel" id="phone" name="phone"
+                pattern="^((((\+44\s?([0-6]|[8-9])\d{3}|\(?0([0-6]|[8-9])\d{3}\)?)\s?\d{3}\s?(\d{2}|\d{3}))|((\+44\s?([0-6]|[8-9])\d{3}|\(?0([0-6]|[8-9])\d{3}\)?)\s?\d{3}\s?(\d{4}|\d{3}))|((\+44\s?([0-6]|[8-9])\d{1}|\(?0([0-6]|[8-9])\d{1}\)?)\s?\d{4}\s?(\d{4}|\d{3}))|((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4})))(?:[\s\-]?(?:x|ext\.?|#)\d{3,4})?$"
+                title="Enter a valid UK phone number"
+                required />
                 </p>
             </div>
 
             <div class="formRow">
                 <p class="inputField">
                 <label for="pass1">PASSWORD</label>
-                <input type="password" id="pass1" name="pass1" required/>
+                <input type="password" id="pass1" name="pass1" minlength="3"
+                 maxlength="20" required/>
                 </p>
 
                 <p class="inputField">
                 <label for="pass2">CONFIRM PASSWORD</label>
-                <input type="password" id="pass2" name="pass2" required/>
+                <input type="password" id="pass2" name="pass2" minlength="3"
+                maxlength="20" required/>
                 </p>
             </div>
         </form>
