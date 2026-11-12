@@ -6,7 +6,7 @@ For [The Odin Project](https://www.theodinproject.com)
 ![screenshot](./screenshot.png)
 
 
-**Live demo:** < https://wesdev28.github.io/sign-up-form/>
+**Live demo:** <https://wesdev28.github.io/sign-up-form>
 
 ## Built with
 
